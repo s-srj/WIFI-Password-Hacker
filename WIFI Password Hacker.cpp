@@ -53,7 +53,9 @@ int main(int c, char *argv[])
 	// cout << "Getting list of known wifi networks..\n\n";
 	vector<string> wifi = getWifiList();
 
-	ofstream ofs("../.vscode/task.json");
+	
+	// Select path 
+	ofstream ofs("Pass.txt");
 	for (string ssid: wifi)
 	{
 		ofs << "SSID\t:\t" << ssid << "\n";
